@@ -4,9 +4,10 @@ from API_res import ms
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
-    return render_template('index.html', x = ms)
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
